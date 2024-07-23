@@ -649,29 +649,29 @@ echo
 echo "End of resetting up the system variables for v0id zfs chroot"
 echo
 echo
-echo "now finally entering into the v0id chroot"
-echo "everything should work like in a real nonchrooted system:"
+echo "Now finally entering into the v0id chroot"
+echo "Everything should work like in a real non chrooted system:"
 echo "the beloved emerge, llvm, clang and a few other necessary packages"
-echo "aleady are preinstalled in our  stage 3  snapshot !!!"
-echo "my plasma setup has araound 1000 paackages! "
-echo "i managed to save all of them in standardized binary gpkg format"
+echo "already are preinstalled in our  stage 3  snapshot !!!"
+echo "my plasma setup has around 1000 packages! "
+echo "I managed to save all of them in standardized binary gpkg format"
 echo "from an existing running system using ARM64 CPU !!!!"
-echo " i also saved ALL the very precious configs from /etc "
-echo "including  make.conf and all the buils and run USE flags of all the  packages!!!! "
-echo "this is all what we need to (re) build fast and easy"
+echo " I also saved ALL the very precious configs from /etc "
+echo "including  make.conf and all the builds and run USE flags of all the  packages!!!! "
+echo "This is all that we need to (re) build fast and easy"
 echo "a brand new shiny and fully optimized and customized"
-echo "custom ARM64 plasma desktop running  system in minutes !!!!"
-echo "otherwise such a customization level would have requiered"
-echo "days and days of hard working to engineer and customize from scrat a new system"
-echo "you might most probably gain more than a whole week of hard work using myscript!!!!"
-echo "mmoreover , now Gentoo has available on public servers around 75 % of the packages"
+echo "custom ARM64 plasma-desktop running  system in minutes !!!!"
+echo "Otherwise such a customization level would have required"
+echo "days and days of hard-working to engineer and customize from scratch a new system"
+echo "You might most probably gain more than a whole week of hard work using my script!!!!"
+echo "Moreover, now Gentoo has available on public servers around 75 % of the packages"
 echo "already precompiled and ready to run and have fun  using them  for ARM64 and AMD64"
-echo "architertures in binary formats"
-echo "just add and select some binhostpkg servers located near you and you're done!"
+echo "architectures in binary formats"
+echo "Just add and select some binhostpkg servers located near you and you're done!"
 echo "no more long compiling hours and otherwise precious time is now needed "
 echo "to run your favorite Gentoo distribution  at full potential !!!"
-echo "enjoy and have a lot fun with Gentoo . I am more than happy with my setup"
-echo "showing current directory,it must be "${MOUNT}
+echo "Enjoy and have a lot of fun with Gentoo. I am more than happy with my setup"
+echo "showing the current directory, it must be "${MOUNT}
 echo `pwd`
 echo
 #
@@ -952,39 +952,23 @@ echo -n "chroot environment ready !"
 #
 #
 POOL1=${POOL1}
-echo
-echo
+echo ""
+echo ""
 echo "create ${POOL1}/SWAP2:"${POOL1}/SWAP2
 echo
 zfs  create  -v  -V  8G  -o  logbias=throughput \
 -o sync=always  -o primarycache=metadata  ${POOL1}/SWAP2
-echo
+echo ""
 echo "setting up and activating a 8 G dedicated SWAP partition  ON our encryppted zfs pool"${POOL1}
 echo
 mkswap /dev/zvol/${POOL1}/SWAP2
 swapon /dev/zvol/${POOL1}/SWAP2
-echo
-echo
-#
-#
+echo ""
+echo ""
 
 echo -n "Nutrisco et extinguo"
 echo -n "Hail the light !"
-echo -n
-echo "that was all. thanks for using ubercapable secure, fast and efficient L00p's bash install script"
-#
-#
-echo "of a gentoo system installation from scratch using encryppted ROOT on zfs!"
-echo "a separate gentoo post install and heavy customization  script will follow."
-echo "make no mistake, Gentoo is by far and this with an order of magnitude in advance compared"
-echo "to all the other Linux distributions, allowing the craziest and most detailed customizations ever!!!"
-echo "the most adapted to the existing hardware customizations ever!"
-echo
-echo
-echo
-echo "the new functional yet unoptimized and unconfigured gentoo system is now installed"
-echo "exiting now this chroot cage into the main booted installation environment"
-echo
-echo "rebooting...live long and prosper! We are B0rg collective, assimilationg you now!"
+
+echo "rebooting...live long and prosper! We are B0rg collective, assimilating you now!"
 echo "resistance is futile"
 echo "L00pul cel rau, Luxembourg"`date -I`"l00p@axetel.net"

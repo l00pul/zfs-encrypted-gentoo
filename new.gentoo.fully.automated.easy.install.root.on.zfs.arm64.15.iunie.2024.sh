@@ -971,4 +971,4 @@ echo -n "Hail the light !"
 
 echo "rebooting...live long and prosper! We are B0rg collective, assimilating you now!"
 echo "resistance is futile"
-echo "L00pul cel rau, Luxembourg"`date -I`"l00p@axetel.net"
+echo "L00pul cel rau, Luxembourg" "l00p@axetel.net"
